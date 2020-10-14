@@ -28,7 +28,7 @@ public class Fraction {
     public Fraction add(Fraction other)
     {
         int n = this.numerator*other.denominator + this.denominator*other.numerator;
-        int d = this.denominator * other.getDenom();
+        int d = this.denominator * other.denominator;
 
         Fraction result = new Fraction(n,d);
         return result;
@@ -87,7 +87,8 @@ public class Fraction {
 
 
 //		Add code to call reciprocal here
-        System.out.println("The reciprocal of " + f5 + " is " + f5.reciprocal());
+        Fraction fR5 = f5.reciprocal();
+        System.out.println("The reciprocal of " + f5 + " is " + fR5);
 
 //		create 2 new fractions and add them here.
         Fraction f6 = new Fraction(1,10);
